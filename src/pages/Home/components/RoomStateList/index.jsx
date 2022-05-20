@@ -10,7 +10,7 @@ import "./styles.scss";
 const RoomStateList = () => (
   <div className="statelist-wrapper">
     {statusList.map((roomState) => (
-      <RoomStateComponent {...roomState} />
+      <RoomStateComponent key={roomState.status} {...roomState} />
     ))}
   </div>
 );
