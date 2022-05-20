@@ -1,6 +1,10 @@
+// libs
 import React from "react";
-import "./App.css";
+// components
+import Home from "./pages/Home";
+// others
+import "./App.scss";
 
-const App = () => <div className="App">Happy coding</div>;
+const App = () => <Home />;
 
 export default App;
