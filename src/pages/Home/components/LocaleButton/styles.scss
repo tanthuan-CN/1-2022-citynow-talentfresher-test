@@ -1,0 +1,27 @@
+.button-wrapper {
+  background-color: #fff;
+  width: 162px;
+  height: 100px;
+  &-inner {
+    @include perfect-center;
+
+    cursor: pointer;
+    flex-direction: column;
+    height: 100%;
+    color: #000;
+    .button-name {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    .button-icon {
+      white-space: nowrap;
+      font-size: 20px;
+    }
+  }
+}
+.active {
+  border: #40a9ff 1px solid;
+  .button-wrapper-inner {
+    color: #40a9ff;
+  }
+}
