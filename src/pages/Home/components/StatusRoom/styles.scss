@@ -1,0 +1,25 @@
+.status-room-wrapper {
+  width: 25%;
+  .status-room-inner {
+    padding: 1rem;
+    .status-room-list {
+      display: flex;
+      flex-wrap: wrap;
+      .status-room-item {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        margin-bottom: 1rem;
+        align-self: flex-start;
+        .status-room-color {
+          width: 3rem;
+          height: 3rem;
+          margin-right: 1rem;
+        }
+        .status-room-title {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
