@@ -1,5 +1,7 @@
+// libs
 import React from "react";
-import "./App.css";
+// others
+import "./App.scss";
 
 const App = () => <div className="App">Happy coding</div>;
 
