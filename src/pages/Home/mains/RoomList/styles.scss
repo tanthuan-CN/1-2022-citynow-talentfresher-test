@@ -1,0 +1,12 @@
+.roomlist {
+  &-wrapper {
+    background-color: #d3dbe2;
+    padding: 15px;
+    &-inner {
+      display: grid;
+      grid-template-columns: repeat(14, 132px);
+      grid-template-rows: repeat(10, 62px);
+      grid-gap: 18px 5px;
+    }
+  }
+}
