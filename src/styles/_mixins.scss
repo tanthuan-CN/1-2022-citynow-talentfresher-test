@@ -1,0 +1,36 @@
+@mixin absolute-center($direction: "left", $position: absolute) {
+  position: $position;
+
+  @if $direction == "left" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @if $direction == "top" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @if $direction == "both" {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin perfect-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin content-wrapper {
+  max-width: 1016px;
+  margin: 0 auto;
+}
+
+@mixin text-wrapper {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
