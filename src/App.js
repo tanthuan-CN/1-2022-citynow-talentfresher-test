@@ -1,6 +1,19 @@
+// libs
 import React from "react";
-import "./App.css";
+// layouts
+import HomePage from "./pages/Home";
+// others
+import { ProvideLocale } from "@/contexts/LocaleContext";
+import { ProvideRoom } from "@/contexts/RoomContext";
 
-const App = () => <div className="App">Happy coding</div>;
+const App = () => (
+  <div className="App">
+    <ProvideLocale>
+      <ProvideRoom>
+        <HomePage />
+      </ProvideRoom>
+    </ProvideLocale>
+  </div>
+);
 
 export default App;

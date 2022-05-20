@@ -1,0 +1,34 @@
+@import "../../../../styles/index.scss";
+.utils-wrapper {
+  width: 60%;
+  .utils-inner {
+    .utils-list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .util-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0.3s;
+        width: 9rem;
+        height: 6rem;
+        cursor: pointer;
+        background-color: #fff;
+        .util-title {
+          font-size: 2rem;
+        }
+        .util-status {
+          font-size: 1.2rem;
+        }
+        &:nth-child(3) {
+          color: $primaryColor;
+        }
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}

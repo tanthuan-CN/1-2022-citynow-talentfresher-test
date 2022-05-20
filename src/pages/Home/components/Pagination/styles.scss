@@ -1,0 +1,11 @@
+.pagination-wrapper {
+  width: 15%;
+  .pagination-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
