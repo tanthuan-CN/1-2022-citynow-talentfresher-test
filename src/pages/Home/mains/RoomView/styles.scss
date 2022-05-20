@@ -1,6 +1,7 @@
+@import "../../../../styles/index.scss";
 .room-view-wrapper {
   height: 85%;
-  background-color: rgb(199, 190, 190);
+  background-color: $secondaryBackgroundColor;
   .room-view-inner {
     padding: 1rem;
   }

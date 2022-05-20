@@ -1,3 +1,4 @@
+@import "../../../../styles/index.scss";
 .utils-wrapper {
   width: 60%;
   .utils-inner {
@@ -22,10 +23,10 @@
           font-size: 1.2rem;
         }
         &:nth-child(3) {
-          color: skyblue;
+          color: $primaryColor;
         }
         &:hover {
-          color: skyblue;
+          color: $primaryColor;
         }
       }
     }

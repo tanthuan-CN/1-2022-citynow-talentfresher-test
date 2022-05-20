@@ -1,6 +1,7 @@
+@import "../../../../styles/index.scss";
 .room-control-wrapper {
   height: 15%;
-  background-color: #0f306c;
+  background-color: $primaryBackgroundColor;
   .room-control-inner {
     display: flex;
     align-items: center;
