@@ -1,0 +1,6 @@
+.statelist-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 210px);
+  grid-template-rows: repeat(2, 51px);
+  grid-row-gap: 12px;
+}
