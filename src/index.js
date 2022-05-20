@@ -1,7 +1,13 @@
+// libs
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
+// layouts
 import App from "./App";
+// styles
+import "./styles/global.scss";
+import "./styles/index.scss";
+import "./styles/reset.css";
+// others
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
