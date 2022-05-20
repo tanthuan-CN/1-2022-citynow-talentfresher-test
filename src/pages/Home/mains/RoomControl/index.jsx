@@ -7,12 +7,22 @@ import Pagination from "../../components/Pagination";
 // styles
 import "./styles.scss";
 
-const RoomControl = () => (
+const RoomControl = ({
+  pagination,
+  showCheckout,
+  onChangePagination,
+  onChangeShowCheckout
+}) => (
   <article className="room-control-wrapper">
     <div className="room-control-inner">
       <StatusRoom />
-      <Pagination />
-      <UtilsControl />
+      <Pagination pagination={pagination} />
+      <UtilsControl
+        pagination={pagination}
+        showCheckout={showCheckout}
+        onChangePagination={onChangePagination}
+        onChangeShowCheckout={onChangeShowCheckout}
+      />
     </div>
   </article>
 );
