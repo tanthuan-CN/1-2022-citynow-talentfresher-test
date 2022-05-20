@@ -1,0 +1,18 @@
+.button-wrapper {
+  background-color: #fff;
+  width: 162px;
+  height: 100px;
+  &-inner {
+    @include perfect-center;
+
+    flex-direction: column;
+    height: 100%;
+    color: #000;
+    .button-name {
+      font-size: 30px;
+    }
+    .button-icon {
+      white-space: nowrap;
+    }
+  }
+}
