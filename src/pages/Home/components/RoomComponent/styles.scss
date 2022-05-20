@@ -1,0 +1,15 @@
+.room-wrapper {
+  padding: 5px 5px 25px 5px;
+  .room-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .room-night {
+    margin-bottom: 5px;
+    text-align: right;
+  }
+  .room-guest {
+    @include text-wrapper;
+  }
+}
