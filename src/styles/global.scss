@@ -1,0 +1,22 @@
+html,
+body {
+  font-size: 14px;
+  line-height: 1;
+}
+a {
+  font-family: $secondaryFont;
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
