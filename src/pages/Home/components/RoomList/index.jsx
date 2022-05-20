@@ -5,7 +5,6 @@ import "./styles.scss";
 // layouts
 import RoomItem from "../RoomItem";
 // others
-// import { roomData } from "@/mocks/index";
 import { useRoom } from "@/contexts/RoomContext";
 
 const RoomList = ({ pagination, showCheckout }) => {

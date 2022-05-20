@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 // styles
 import "./styles.scss";
 // others
-import keyCode from "@/constants";
+import keyCode from "@/constants/keyCodes";
 import { arrStatus } from "@/mocks";
 import { useLocale } from "@/contexts/LocaleContext";
 import { useRoom } from "@/contexts/RoomContext";
