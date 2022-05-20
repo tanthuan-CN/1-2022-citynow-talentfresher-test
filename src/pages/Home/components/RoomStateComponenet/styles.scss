@@ -1,0 +1,14 @@
+.state-wrapper {
+  display: flex;
+  align-items: center;
+  .state-room {
+    background-color: #fff;
+    width: 51px;
+    height: 51px;
+  }
+  .state-text {
+    margin-left: 5px;
+    font-size: 16px;
+    color: white;
+  }
+}
