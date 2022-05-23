@@ -1,22 +1,33 @@
 // libs
 import React from "react";
+// contexts
+import { useControl } from "@/contexts/ControlContext";
+import { useLocale } from "@/contexts/LocalContext";
 /// components
-import PageUpButton from "../PageUpButton";
-import PageDownButton from "../PageDownButton";
-import { HideCheckoutButton } from "../HideCheckoutButton";
-import RefreshButton from "../RefreshButton";
-import LocaleButton from "../LocaleButton";
+import { Button } from "../Button";
 // others
 import "./styles.scss";
+import buttonList from "@/dataSources/ButtonList";
 
-const Controls = () => (
-  <div className="controls-wrapper">
-    <PageDownButton />
-    <PageUpButton />
-    <HideCheckoutButton />
-    <RefreshButton />
-    <LocaleButton />
-  </div>
-);
+const Controls = () => {
+  const controlState = useControl();
+  const { localeDataSource, locale, isSwitch } = useLocale();
+
+  const buttons = buttonList(localeDataSource, locale, isSwitch);
+  return (
+    <div className="controls-wrapper">
+      {buttons.map((button) => (
+        <Button
+          {...button}
+          isActive={
+            typeof button.isActive !== "boolean"
+              ? controlState[button.isActive]
+              : button.isActive
+          }
+        />
+      ))}
+    </div>
+  );
+};
 
 export default Controls;

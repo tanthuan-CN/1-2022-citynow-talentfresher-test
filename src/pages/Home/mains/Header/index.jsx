@@ -3,11 +3,11 @@ import React, { useEffect } from "react";
 // components
 import Pagination from "../../components/Pagination";
 import RoomStateList from "../../components/RoomStateList";
+import Controls from "../../components/Controls";
 // contexts
 import { useLocale } from "@/contexts/LocalContext";
 // others
 import "./styles.scss";
-import Controls from "../../components/Controls";
 
 const Header = ({ currentPage, totalPage }) => {
   const { setLocale } = useLocale();
