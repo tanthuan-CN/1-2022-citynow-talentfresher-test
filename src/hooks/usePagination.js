@@ -39,7 +39,6 @@ const usePagination = ({ total, itemPerPage }) => {
         } else {
           setCurrentPage(1);
         }
-        console.log("Page Up");
         ChangeSwitch(true);
       } else if (e.keyCode === keyCode.PAGE_DOWN) {
         e.preventDefault();
