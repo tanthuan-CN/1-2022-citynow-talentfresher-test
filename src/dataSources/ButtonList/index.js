@@ -1,38 +1,38 @@
 // libs
 import React from "react";
 import { CaretDownOutlined, CaretUpOutlined } from "@ant-design/icons";
-// component
-import PageUpButton from "@/pages/Home/components/PageUpButton";
-import PageDownButton from "@/pages/Home/components/PageDownButton";
-import { HideCheckoutButton } from "@/pages/Home/components/HideCheckoutButton";
-import RefreshButton from "@/pages/Home/components/RefreshButton";
-import LocaleButton from "@/pages/Home/components/LocaleButton";
 
-const buttonList = [
+const buttonList = (localeDataSource, locale, isSwitch) => [
   {
     buttonName: "F1",
     buttonState: <CaretDownOutlined />,
-    buttonType: <PageUpButton buttonName="F1" buttonState="Hello" />
+    isActive: "isPageDown"
   },
   {
     buttonName: "F3",
-    buttonType: <PageDownButton buttonName="F1" buttonState="Hello" />,
-    buttonState: <CaretUpOutlined />
+    buttonState: <CaretUpOutlined />,
+    isActive: "isPageUp"
   },
   {
     buttonName: "F4",
-    buttonType: <HideCheckoutButton buttonName="F1" buttonState="Hello" />,
-    buttonState: "Controls.HideCheckout"
+    buttonState:
+      locale === "vi"
+        ? localeDataSource["Controls.Vietnamese"]
+        : localeDataSource["Controls.English"],
+    isActive: "isHide"
   },
   {
     buttonName: "F5",
-    buttonType: <RefreshButton buttonName="F1" buttonState="Hello" />,
-    buttonState: "Controls.Refresh"
+    buttonState: localeDataSource["Controls.Refresh"],
+    isActive: "isRefresh"
   },
   {
     buttonName: "F12",
-    buttonType: <LocaleButton buttonName="F1" buttonState="Hello" />,
-    buttonState: "Controls.Vietnamese"
+    buttonState:
+      locale === "vi"
+        ? localeDataSource["Controls.Vietnamese"]
+        : localeDataSource["Controls.English"],
+    isActive: isSwitch
   }
 ];
 
