@@ -13,11 +13,17 @@ const Controls = () => {
   const controlState = useControl();
   const { localeDataSource, locale, isSwitch } = useLocale();
 
-  const buttons = buttonList(localeDataSource, locale, isSwitch);
+  const buttons = buttonList(
+    localeDataSource,
+    locale,
+    isSwitch,
+    controlState.isHide
+  );
   return (
     <div className="controls-wrapper">
       {buttons.map((button) => (
         <Button
+          key={button.buttonName}
           {...button}
           isActive={
             typeof button.isActive !== "boolean"
