@@ -4,8 +4,8 @@ import React from "react";
 import "./styles.scss";
 
 const RoomStateComponent = ({ status, color }) => (
-  <div className="state-wrapper">
-    <div className="state-room" style={{ backgroundColor: color }}></div>
+  <div className="room-state-wrapper">
+    <div className="state-color" style={{ backgroundColor: color }}></div>
     <div className="state-text">{status}</div>
   </div>
 );

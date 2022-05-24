@@ -8,7 +8,7 @@ import statusList from "@/dataSources/StateList";
 import "./styles.scss";
 
 const RoomStateList = () => (
-  <div className="statelist-wrapper">
+  <div className="room-state-list-wrapper">
     {statusList.map((roomState) => (
       <RoomStateComponent key={roomState.status} {...roomState} />
     ))}
