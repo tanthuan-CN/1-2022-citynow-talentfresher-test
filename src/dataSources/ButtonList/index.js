@@ -2,7 +2,7 @@
 import React from "react";
 import { CaretDownOutlined, CaretUpOutlined } from "@ant-design/icons";
 
-const buttonList = (localeDataSource, locale, isSwitch) => [
+const buttonList = (localeDataSource, locale, isSwitch, isHide) => [
   {
     buttonName: "F1",
     buttonState: <CaretDownOutlined />,
@@ -15,10 +15,9 @@ const buttonList = (localeDataSource, locale, isSwitch) => [
   },
   {
     buttonName: "F4",
-    buttonState:
-      locale === "vi"
-        ? localeDataSource["Controls.Vietnamese"]
-        : localeDataSource["Controls.English"],
+    buttonState: isHide
+      ? localeDataSource["Controls.ShowCheckout"]
+      : localeDataSource["Controls.HideCheckout"],
     isActive: "isHide"
   },
   {
