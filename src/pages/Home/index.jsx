@@ -29,7 +29,7 @@ const Home = () => {
       }));
       setRooms(newRooms);
     }
-  }, [isRefreshActive, rooms]);
+  }, [isRefreshActive]);
 
   return (
     <div className="home-wrapper">
