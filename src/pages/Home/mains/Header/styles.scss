@@ -1,0 +1,16 @@
+.header {
+  @include content-wrapper();
+  &-wrapper {
+    background-color: #0f306c;
+    padding: 20px;
+    &-inner {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      .header-controls {
+        margin-left: 20px;
+        width: 100%;
+      }
+    }
+  }
+}

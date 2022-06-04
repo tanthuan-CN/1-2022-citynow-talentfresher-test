@@ -1,0 +1,8 @@
+.home {
+  &-wrapper {
+    &-inner {
+      display: grid;
+      grid-template-rows: 164px 806px;
+    }
+  }
+}

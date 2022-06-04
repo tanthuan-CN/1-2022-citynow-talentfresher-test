@@ -1,6 +1,19 @@
+// libs
 import React from "react";
-import "./App.css";
+// contexts
+import { ProvideLocale } from "./contexts/LocalContext";
+import { ProvideControl } from "./contexts/ControlContext";
+// components
+import Home from "./pages/Home";
+// others
+import "./App.scss";
 
-const App = () => <div className="App">Happy coding</div>;
+const App = () => (
+  <ProvideControl>
+    <ProvideLocale>
+      <Home />
+    </ProvideLocale>
+  </ProvideControl>
+);
 
 export default App;
